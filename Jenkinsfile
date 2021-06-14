@@ -3,8 +3,7 @@ pipeline {
     environment {
         //be sure to replace "willbla" with your own Docker Hub username
         registry = "balakrishnalingala/train-schedule" 
-        registryCredential = 'dockerkey' 
-        dockerImage = ''
+        registryCredential = 'dockerkey'
         DOCKER_IMAGE_NAME = "balakrishnalingala/train-schedule"
     }
     stages {
