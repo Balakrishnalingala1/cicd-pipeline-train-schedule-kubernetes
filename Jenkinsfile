@@ -1,7 +1,10 @@
 pipeline {
     agent any
     environment {
-        DOCKER_IMAGE_NAME = "balakrishnalingala/train-schedule"
+        
+        registry = "balakrishnalingala/train-schedule"
+        registryCredential = 'docker_hub_login'
+        DOCKER_IMAGE_NAME = "train-schedule"
     }
     stages {
         stage('Build') {
